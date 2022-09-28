@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 부트스트랩 -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}" type = "text/css">
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+
+    <title>Hello Pybo!</title>
+</head>
+<body>
+
+{% include "navbar.html" %}
+
+{% block content %}
+{% endblock %}
+
+<script src="{% static 'jquery-3.6.1.min.js' %}"></script>
+<script src="{% static 'bootstrap.min.js' %}"></script>
+{% block script %}
+{% endblock %}
+</body>
+</html>
